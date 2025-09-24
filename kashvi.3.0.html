@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>NESTED LIST</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: darkgreen;
+    }
+    ol {
+      font-size: 18px;
+      margin-left: 30px;
+    }
+    ul {
+      margin-top: 8px;
+      margin-bottom: 15px;
+    }
+    li {
+      margin: 5px 0;
+    }
+    /* Fruits list */
+    ol > li:first-child {
+      color: darkred;
+      font-weight: bold;
+    }
+    /* Vegetables list */
+    ol > li:last-child {
+      color: darkblue;
+      font-weight: bold;
+    }
+    /* Fruit items */
+    ol > li:first-child ul li {
+      color: #b30000;
+    }
+    /* Vegetable items */
+    ol > li:last-child ul li {
+      color: #004d99;
+    }
+  </style>
+</head>
+<body>
+  <h1>LIST OF FRUITS AND VEGETABLES</h1>
+  <ol>
+    <li>LIST OF FRUITS
+      <ul>
+        <li>APPLE</li>
+        <li>WATERMELON</li>         
+        <li>ORANGE</li>
+        <li>STRAWBERRY</li>
+      </ul>
+    </li>
+    <li>LIST OF VEGETABLES
+      <ul>
+        <li>MUSHROOM</li>
+        <li>POTATO</li>
+        <li>CARROT</li>
+        <li>SWEET POTATO</li>
+      </ul>
+    </li>
+  </ol>
+</body>
+</html>
